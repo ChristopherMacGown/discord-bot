@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "discord-bot"
+version = "0.1.0"
+description = ""
+authors = ["Christopher MacGown <chris@macgown.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+discord = "discord_bot.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+discord-py = "^2.3.2"
+typer = "^0.12.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
